@@ -20,8 +20,15 @@
       <p><strong>Date:</strong> December 15, 2025</p>
       <p><strong>Time:</strong> 9:00 AM - 6:00 PM</p>
       <p><strong>Location:</strong> Aria Resort & Casino 3730 S Las Vegas Blvd, Las Vegas, NV 89158</p>
+      <h2>Event Highlights</h2>
+      <ul>
+        <li>Network with Peers</li>
+        <li>Workshop sessions during event</li>
+        <li>Ground breaking Technological introduction</li>
+      </ul>
       <img src="Assets/tech conference.jpg" width="200" alt="Networking with peers">
       <img src="Assets/Workshop Session during Event.jpg" width="200" alt="Workshop session during the event">
+      <img src="Assets/Robot arm.jpg" width="200" alt="Ground breaking Technological Introductions">
       <p>Discover the latest trends in technology, meet industry experts, and participate in some hands-on workshops.</p>
     </section>
 
@@ -51,8 +58,60 @@
 
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+        <fieldset>
+          <legend>Ticket Type:</legend>
+          <input type="radio" id="general" name="ticket" value="general" required>
+          <label for="general">General Admission</label>
+          <input type="radio" id="Student" name="ticket" value="Student">
+          <label for="Student">Student Admission</label> 
+          <input type="radio" id="vip" name="ticket" value="vip">
+          <label for="vip">VIP</label>
+        </fieldset>
+
+         <fieldset>
+          <legend>Workshops (choose any):</legend>
+          <input type="checkbox" id="ai" name="workshops" value="AI">
+          <label for="ai">Artificial Intelligence</label>
+          <input type="checkbox" id="robotics" name="workshops" value="Robotics">
+          <label for="robotics">Robotics</label>
+          <input type="checkbox" id="webdev" name="workshops" value="Web Development">
+          <label for="webdev">Web Development</label>
+        </fieldset>
+
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select your country--</option>
+          <option value="us">United States</option>
+          <option value="ca">Canada</option>
+          <option value="uk">United Kingdom</option>
+          <option value="other">Other</option>
+        </select>
+
+
+        <label for="comments">Comments / Special Requests:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Let us know anything special"></textarea>
+
+
+        <button type="submit">Sign Up</button>
+
+
+      </form>
     </section>
-    </main>
+
+
+     <!-- Thank you message (Hidden message revealed when clicked.) -->
+    <section id="thank-you" hidden>
+      <h2>Thank You for Registering!</h2>
+      <p>We look forward to seeing you at the Winter Tech Conference 2025.</p>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Tech Innovation Conference. All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
