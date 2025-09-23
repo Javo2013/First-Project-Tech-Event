@@ -1,1 +1,23 @@
 /* External Styling*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b2b8be;
+  color: #f3ebeb;
+  line-height: 1.6;
+}
+
+header, footer {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header .logo {
+  max-width: 100px;
+}
+
+
